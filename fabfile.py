@@ -5,7 +5,7 @@ from fabric.api import env, task, run, local, cd, sudo
 env.user = 'ubuntu'
 env.project_dir = "/home/ubuntu/audiogram/"
 env.hosts = ("audiogram.datadesk.news",)
-env.key_filename = (expanduser(''),)
+env.key_filename = (expanduser('~/.ec2/datadesk.september.2017.pem'),)
 
 
 @task
